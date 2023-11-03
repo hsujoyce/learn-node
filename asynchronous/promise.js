@@ -1,3 +1,9 @@
+// prints out:
+// do more stuff
+// in main
+// processing ... 
+// Kim
+
 function getName(i) {
   let names = ['Jane', 'Jonny', 'Kim', 'Bali'];
   return new Promise((resolve, reject) => {

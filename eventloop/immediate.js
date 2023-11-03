@@ -1,3 +1,9 @@
+//What order of execution do
+//you see in terms of the messages being logged.
+// nothing in the poll phase, why did check not get executed first?
+//check is part of the readfile function
+// file read , check, timer
+
 const fs = require('fs');
 
 fs.readFile('./data/test.txt', function(err, data) {

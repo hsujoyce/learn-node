@@ -1,3 +1,9 @@
+// Explore the difference between:
+// sequentialStart: 
+// concurrentStart: 
+// concurrentPromise: 
+// parallel: 
+
 function resolveAfter2Seconds() {
   console.log("starting slow promise");
   return new Promise((resolve) => {

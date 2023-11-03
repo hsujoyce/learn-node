@@ -1,3 +1,6 @@
+//In "eventloop/timer.js", what will be the order of execution?
+// foo, (add setTimeout to timer) ,baz, foo, baz, (event queue gets call) 2:bar, 1: bar
+
 const bar = (x) => console.log(`${x} : bar`);
 const baz = () => console.log('baz');
 

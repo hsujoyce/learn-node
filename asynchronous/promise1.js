@@ -1,9 +1,15 @@
+//promise run before event loop
+// promise gets resolved and then event loop
+
 const fs = require('fs');
+
+//io operation
 fs.readFile('./data/test.txt', (err, data) => {
  if (err) console.log('Read Error');
  else console.log('Data: ' + data);
 });
 
+// promise
 function getName(i) {
   let names = ['Jane', 'Jonny', 'Kim', 'Bali'];
   return new Promise((resolve, reject) => {
